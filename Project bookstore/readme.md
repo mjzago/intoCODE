@@ -6,7 +6,16 @@ CREATE DATABASE bookstore;
 
 This code will create a new database named "bookstore".
 
-After creating the database, you can then proceed to create the necessary tables within the "bookstore" database. Based on your previous table structure, you can use the following SQL code to create the "Books" table:
+After creating the database, you can then proceed to create the necessary tables within the "bookstore" database. Based on your previous table structure, you can use the following SQL code to create the "publisher" table:
+
+```sql
+CREATE TABLE publisher (
+    publisher_id INT(11) PRIMARY KEY AUTO_INCREMENT,
+    Title VARCHAR(50) COLLATE latin1_swedish_ci NOT NULL
+);
+```
+
+Now create the "Books" table
 
 ```sql
 CREATE TABLE Books (
@@ -21,14 +30,7 @@ CREATE TABLE Books (
 
 This code will create a table named "Books" with the specified columns: ID, Title, description, publishing_year, and publisher_id. The ID column is defined as the primary key with auto-increment, ensuring each record has a unique identifier.
 
-To create the "publisher" table based on the provided structure, you can use the following SQL code:
 
-```sql
-CREATE TABLE publisher (
-    publisher_id INT(11) PRIMARY KEY AUTO_INCREMENT,
-    Title VARCHAR(50) COLLATE latin1_swedish_ci NOT NULL
-);
-```
 
 After creating the tables, you can proceed to insert data into them using the following SQL INSERT statements:
 
@@ -45,3 +47,5 @@ VALUES ('Book 1', 'Description 1', 2021, 1),
        ```
 These INSERT statements will insert sample data into the "publisher" and "Books" tables. Adjust the values and number of rows as needed for your specific data.
 
+
+Test
