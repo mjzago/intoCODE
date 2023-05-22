@@ -7,13 +7,13 @@ The intoCODE course provided an extensive curriculum covering two key areas: Dat
 ## Data Science Modules
 The Data Science modules offered a solid foundation in programming and data analysis. Starting with an introduction to agile project management and versioning, the curriculum gradually progressed through essential Python programming concepts, data structures, and data manipulation using popular libraries like Pandas and NumPy. The course also delved into topics such as descriptive statistics, simulation, visualization, machine learning, and natural language processing. The Data Science area is divided into three fundamental blocks of programming education, incorporating an introduction to Data Science (DS-Intro). Here is an overview of the Data Science modules:
 
-1. Agile Project Management, Versioning:
+#### 1. Agile Project Management, Versioning:
    - Introduction to agile work with SCRUM
    - Managing learning processes with EDUSCRUM
    - Social Intranet and team communication (Slack)
    - Collaborative software development using Git
 
-2. Python Fundamentals Quickstart (Python I):
+#### 2. Python Fundamentals Quickstart (Python I):
    - Introduction to Python programming
    - DS-Intro: Basic descriptive statistics
    - Control structures and program development
@@ -23,7 +23,7 @@ The Data Science modules offered a solid foundation in programming and data anal
    - Sequences: Lists and tuples
    - DS-Intro: Simulation and static visualization
 
-3. Python Data Structures (Python II):
+#### 3. Python Data Structures (Python II):
    - Dictionaries and sets
    - DS-Intro: Simulation and dynamic visualization
    - Array-oriented programming with NumPy
@@ -33,7 +33,7 @@ The Data Science modules offered a solid foundation in programming and data anal
    - Files and exception handling
    - DS-Intro: Handling CSV files in Pandas DataFrames
 
-4. Object-Oriented Programming and Computational Thinking (Python III):
+#### 4. Object-Oriented Programming and Computational Thinking (Python III):
    - Object-oriented programming with Python
    - DS-Intro: Time series and simple linear regression
    - Recursion, search and sorting algorithms, and Big O
