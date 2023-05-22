@@ -38,7 +38,7 @@ The Data Science modules offered a solid foundation in programming and data anal
    - DS-Intro: Time series and simple linear regression
    - Recursion, search and sorting algorithms, and Big O
 
-5. Natural Language Processing (NLP):
+#### 5. Natural Language Processing (NLP):
    - TextBlob Library
    - Part-of-Speech Tagging
    - Sentiment Analysis
@@ -46,24 +46,24 @@ The Data Science modules offered a solid foundation in programming and data anal
    - Visualization of word frequencies
    - Web Scraping as an exercise
 
-6. Machine Learning I:
+#### 6. Machine Learning I:
    - Supervised classification and regression methods using scikit-learn
 
-7. Machine Learning II:
+#### 7. Machine Learning II:
    - Unsupervised methods (Clustering) with scikit-learn
 
-8. Deep Learning:
+#### 8. Deep Learning:
    - Neural networks for structured data (Dense Networks) with Keras
    - Convolutional Neural Networks (CNNs) for image processing with Keras
 
-9. Agile Programming Project in Data Science:
+#### 9. Agile Programming Project in Data Science:
    - Machine Learning Challenge: Small groups compete to generate high-quality predictions from a given dataset
 
 
 ## Web Technology Modules
 The Web Technology modules focused on various aspects of web development, including front-end and back-end technologies. The curriculum covered fundamental concepts such as HTML, CSS, and JavaScript, along with frameworks like Bootstrap and Django. Additionally, topics like databases (both relational and NoSQL), server-side programming with PHP and JavaScript, content management systems (CMS) like WordPress, user experience design (UXD), and mobile app development were explored.
 
-1. Fundamentals of Web Development: Static Websites (Web Technologies 1)
+#### 1. Fundamentals of Web Development: Static Websites (Web Technologies 1)
    - Technical foundations of the internet: network architectures, communication,
 processes, and protocols (HTTP, SOAP, REST, web servers like Apache/Nginx, ...)
    - Document structuring with HTML5
@@ -71,39 +71,39 @@ processes, and protocols (HTTP, SOAP, REST, web servers like Apache/Nginx, ...)
    - Layout and styling with CSS
    - Basics of JavaScript
 
-2. Data Structuring and Databases
+#### 2. Data Structuring and Databases
    -  Data formats and structures: XML, JSON, RDF, ...
    - relational data model: Databases with MySQL
    - NoSQL databases (MongoDB)
 
-3. Dynamic Websites (Web Technologies 2)
+#### 3. Dynamic Websites (Web Technologies 2)
    -  Server-side programming with PHP: Model-View-Controller paradigm, Framework Django
    -  Server-side programming with JavaScript: node.js
 
-4. Content Management Systems
+#### 4. Content Management Systems
    -  Introduction to CMS
    -  WordPress for content editors: Authoring
    -  WordPress for developers: Customizing and developing themes and plugins
 
-5. User Interfaces, User Experience Design (UXD)
+#### 5. User Interfaces, User Experience Design (UXD)
    - Fundamentals of UXD, usability, and interaction design
    - Methods and tools for frontend concept and development
    - Responsive web design (device-independent web development), "Mobile
    - First," "Mobile Only," ... 
    - Mockups, wireframing, prototyping
 
-6. Frontend Programming with JavaScript
+#### 6. Frontend Programming with JavaScript
    - JavaScript use cases and libraries
 
-7. App Development
+#### 7. App Development
    - Native apps, hybrid apps, Progressive Web Apps (PWA)
    - JavaScript frameworks and libraries, e.g., React
 
-8. E-commerce Systems
+#### 8. E-commerce Systems
    - E-commerce websites with WordPress
    - Professional shops with Magento and WooCommerce
 
-9. Agile Web Programming Project
+#### 9. Agile Web Programming Project
    - Website Challenge: Small groups compete to create a website from a dynamically changing information pool.
 
 ## Open Repository
