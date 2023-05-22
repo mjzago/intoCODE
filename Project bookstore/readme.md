@@ -1,4 +1,18 @@
-To create the "bookstore" database, you can use the following SQL code:
+The "Bookstore" project is a web application that allows managing books in a database. The main purpose is to store information about books, such as title, description, publishing year, and publisher ID. The application features the following functionalities:
+
+1. Add Book: Allows adding new books to the database. To add a book, the user needs to provide the title, description, publishing year, and publisher ID.
+
+2. List Books: Displays a list of all books in the database. The list shows the book ID, title, description, publishing year, and publisher ID. It is also possible to delete a book from the list.
+
+3. Search Book: Enables searching for books by title. The user can enter a search term, and the application will return books whose titles partially match the search term.
+
+The application uses PHP for server-side logic and MySQL as the database to store the books. It includes CSS files for styling the pages, such as "book-table.css" and "book-form.css".
+
+Make sure to provide the correct database credentials (host, username, password) in the code to establish a successful connection to the database.
+
+To start first create your Databank with the following tables, and than use the index.PHP to filter and add books. 
+
+To create the "bookstore" database, you can use the following SQL code in the PHPmyadmin:
 
 ```sql
 CREATE DATABASE bookstore;
