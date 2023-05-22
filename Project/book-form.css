@@ -1,0 +1,28 @@
+.book-form {
+    max-width: 200px;
+    
+}
+
+.form-group {
+    margin-bottom: 11px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1px;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+}
+
+.form-group input[type="submit"] {
+    width: auto;
+    margin-top: 1px;
+    cursor: pointer;
+}
