@@ -35,7 +35,7 @@
           $row = $result->fetch_assoc();
 
           // Display the book details in the form
-          echo '<form action="update_book.php" method="post">';
+          echo '<form action="update.php" method="post">';
           echo '  <input type="hidden" name="id" value="' . $row['ID'] . '">';
           echo '  <div class="form-group">';
           echo '    <label for="title">Title:</label>';
