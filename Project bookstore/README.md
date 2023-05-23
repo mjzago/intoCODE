@@ -58,7 +58,8 @@ INSERT INTO Books (Title, description, publishing_year, publisher_id)
 VALUES ('Book 1', 'Description 1', 2021, 1),
        ('Book 2', 'Description 2', 2022, 2),
        ('Book 3', 'Description 3', 2023, 3);
-       ```
+
+```
 These INSERT statements will insert sample data into the "publisher" and "Books" tables. Adjust the values and number of rows as needed for your specific data.
 
 
