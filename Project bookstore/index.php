@@ -129,10 +129,9 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET["search"])) {
         echo "<td>" . $row['publishing_year'] . "</td>";
         echo "<td>" . $row['publisher_id'] . "</td>";
         echo "<td>
-            <form method='POST' action='edit.php'>
+        <form method='POST' action='edit.php?id=" . $row['ID'] . "'>
                 <input type='hidden' name='edit' value='" . $row['ID'] . "'>
-                <button type='submit' name='edit_button' class='edit-button'>
-                <a href='edit.php'>Edit</a>
+                <button type='submit' name='edit_button' class='edit-button'>Edit</button>
             </form>
         </td>";
         echo "<td>
@@ -143,7 +142,6 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET["search"])) {
         </td>";
         echo "</tr>";
     }
-
     echo "</table>";
 }
 

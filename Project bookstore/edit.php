@@ -18,18 +18,21 @@
       
       // Check connection
       if ($conn->connect_error) {
-          die("Connection error: " . $conn->connect_error);
+        die("Connection error: " . $conn->connect_error);
       }
 
-      if (isset($_GET['id'])) {
+      if (isset($_GET['id']) && is_numeric($_GET['id'])) {
         $bookId = $_GET['id'];
 
-        // Retrieve book details from the database
-        $query = "SELECT * FROM books WHERE ID = $bookId";
-        $result = mysqli_query($conn, $query);
+        // Retrieve book details from the database using prepared statements
+        $query = "SELECT * FROM books WHERE ID = ?";
+        $stmt = $conn->prepare($query);
+        $stmt->bind_param("i", $bookId);
+        $stmt->execute();
+        $result = $stmt->get_result();
 
-        if (mysqli_num_rows($result) > 0) {
-          $row = mysqli_fetch_assoc($result);
+        if ($result->num_rows > 0) {
+          $row = $result->fetch_assoc();
 
           // Display the book details in the form
           echo '<form action="update_book.php" method="post">';
@@ -40,7 +43,7 @@
           echo '  </div>';
           echo '  <div class="form-group">';
           echo '    <label for="description">Description:</label>';
-          echo '    <textarea class="form-control" id="description" name="description" required>' . $row['Description'] . '</textarea>';
+          echo '    <textarea class="form-control" id="description" name="description" required>' . $row['description'] . '</textarea>';
           echo '  </div>';
           echo '  <div class="form-group">';
           echo '    <label for="publishing_year">Publishing Year:</label>';
@@ -51,16 +54,19 @@
           echo '    <select class="form-control" id="publisher_id" name="publisher_id" required>';
 
           // Retrieve publishers from the database and populate the select options
-          $publishersQuery = "SELECT * FROM publishers";
-          $publishersResult = mysqli_query($conn, $publishersQuery);
+          $publisherQuery = "SELECT * FROM publisher";
+          $publisherResult = mysqli_query($conn, $publisherQuery);
 
-          while ($publisherRow = mysqli_fetch_assoc($publishersResult)) {
-            $selected = ($publisherRow['ID'] == $row['publisher_id']) ? 'selected' : '';
-            echo '<option value="' . $publisherRow['ID'] . '" ' . $selected . '>' . $publisherRow['Title'] . '</option>';
+          echo '      <option value="">Select Publisher</option>'; // Add a default option
+
+          while ($publisherRow = mysqli_fetch_assoc($publisherResult)) {
+            $selected = ($publisherRow['publisher_id'] == $row['publisher_id']) ? 'selected' : '';
+            echo '<option value="' . $publisherRow['publisher_id'] . '" ' . $selected . '>' . $publisherRow['Title'] . '</option>';
           }
 
           echo '    </select>';
           echo '  </div>';
+
           echo '  <button type="submit" class="btn btn-primary">Update</button>';
           echo '  <a class="btn btn-success" href="index.php">Back to Main Page</a>';
          
