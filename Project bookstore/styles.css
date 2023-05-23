@@ -1,0 +1,108 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  /* Book table styles */
+  .book-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .book-table th,
+  .book-table td {
+    padding: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .book-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .book-table td {
+    background-color: #fff;
+  }
+  
+  .book-table .action-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .book-table .action-buttons button {
+    padding: 5px 10px;
+    background-color: transparent;
+    color: #007bff;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .book-table .action-buttons button:hover {
+    text-decoration: underline;
+  }
+  
+  /* Form styles */
+  form {
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+  
+  form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  form input[type="text"],
+  form input[type="number"],
+  form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    margin-bottom: 10px;
+  }
+  
+  form button[type="submit"] {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 600px) {
+    form input[type="text"],
+    form input[type="number"],
+    form textarea {
+      width: 100%;
+    }
+  
+    .book-table {
+      font-size: 12px;
+    }
+  
+    .book-table th,
+    .book-table td {
+      padding: 6px;
+    }
+  
+    form button[type="submit"] {
+      padding: 6px 12px;
+    }
+  }
+  
